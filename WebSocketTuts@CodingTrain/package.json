@@ -1,0 +1,19 @@
+{
+  "name": "codingtrain-websocket",
+  "version": "1.0.0",
+  "description": "canvas sharing using p5.js, websockets and Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rahil Modi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

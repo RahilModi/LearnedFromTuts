@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.2/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Draw and Share</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <ul>
+            <li class="red selected"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+        </ul>
+        <div class="container">
+            <button id="revealColorSelect">New Color</button>
+            <!-- <button id="changeCursorSize">Update Cursor</button> -->
+            <button id="saveImage">save as .png</button>
+        </div>
+        <div id="colorSelect">
+            <span id="newColor"></span>
+            <div class="sliders">
+                <p>
+                    <label for="red">Red</label>
+                    <input id="red" name="red" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                    <label for="green">Green</label>
+                    <input id="green" name="green" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                    <label for="blue">Blue</label>
+                    <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                </p>
+            </div>
+            <div>
+                <button id="addNewColor">Add Color</button>
+            </div>
+        </div>
+        <!-- <div id="cursorSizeSelect">
+            <span id="newCursorSize" style="text-align:center;"></span>
+            <div class="sliders">
+                <p>
+                    <label>Size</label>
+                    <input type="range" name="cursorSize" id="cursorSize" value="10" min="1" max="50" onchange="updateSize(this.value);">
+                </p>
+            </div>
+            <div>
+                <button id="updateSize">Update Size</button>
+            </div>
+        </div> -->
+    </div>
+    <script src="./sketch.js"></script>
+</body>
+
+</html>
