@@ -1,0 +1,15 @@
+{
+  "name": "automicon",
+  "version": "1.0.0",
+  "description": "conway's game of life ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rahilmodi",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "pngjs": "^3.3.0"
+  }
+}
